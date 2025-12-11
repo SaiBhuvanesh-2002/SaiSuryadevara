@@ -1757,3 +1757,101 @@ textarea.form-input::-webkit-resizer { display: none; }
   from, to { border-color: transparent }
   50% { border-color: var(--orange-yellow-crayola); }
 }
+
+/*-----------------------------------*  #ADVANCED VISUALS
+\*-----------------------------------*/
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--orange-yellow-crayola);
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--orange-yellow-crayola);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+body:hover .cursor-outline {
+  opacity: 1;
+}
+
+/* Cursor Hover State */
+body.hovering .cursor-outline {
+  width: 50px;
+  height: 50px;
+  background-color: hsla(45, 100%, 72%, 0.1);
+}
+
+/* Glassmorphism Refinement */
+.sidebar, article {
+  background: rgba(30, 30, 30, 0.4); /* More transparent */
+  backdrop-filter: blur(12px); /* Stronger blur */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--jet); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vegas-gold); 
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--eerie-black-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+.loader-ring {
+  width: 60px;
+  height: 60px;
+  border: 4px solid transparent;
+  border-top: 4px solid var(--orange-yellow-crayola);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}

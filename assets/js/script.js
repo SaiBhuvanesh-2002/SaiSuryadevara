@@ -120,3 +120,47 @@ animatedElements.forEach(el => {
   el.classList.add('fade-in-up');
   observer.observe(el);
 });
+
+/*-----------------------------------*  #ADVANCED VISUALS JS
+\*-----------------------------------*/
+
+// Custom Cursor
+const cursorDot = document.querySelector('[data-cursor-dot]');
+const cursorOutline = document.querySelector('[data-cursor-outline]');
+
+window.addEventListener("mousemove", function(e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  // Outline follows with slight delay
+  cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, { duration: 500, fill: "forwards" });
+});
+
+// Cursor Hover Interactions
+const hoverElements = document.querySelectorAll("a, button, .content-card, .service-item, .skill-item");
+
+hoverElements.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    document.body.classList.add("hovering");
+  });
+  el.addEventListener("mouseleave", () => {
+    document.body.classList.remove("hovering");
+  });
+});
+
+
+// Preloader
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+  preloader.classList.add("loaded");
+  // Remove from DOM after transition
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 500); 
+});
