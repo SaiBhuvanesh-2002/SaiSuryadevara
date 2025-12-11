@@ -95,6 +95,4 @@ Previously, I contributed as a **Data Scientist at Optum**, where I developed pr
 - **Location**: Atlanta, United States
 
 <!-- Footer -->
-<div align="center">
-  <sub>Built with ❤️ by Sai Bhuvanesh Suryadevara</sub>
-</div>
+

@@ -1708,3 +1708,52 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-overflow: unset;
   }
 }
+
+/*-----------------------------------*  #INTERACTIVE ENHANCEMENTS
+\*-----------------------------------*/
+
+/* Card Hover Effects */
+.content-card, 
+.service-item, 
+.skill-item,
+.project-post-item > a {
+  transition: var(--transition-2);
+}
+
+.content-card:hover, 
+.service-item:hover, 
+.skill-item:hover,
+.project-post-item > a:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-2), 0 0 10px hsla(45, 100%, 72%, 0.1);
+  border-color: var(--orange-yellow-crayola);
+}
+
+/* Button Pulse/Glow */
+.info_more-btn:hover {
+  box-shadow: var(--shadow-2), 0 0 15px hsla(45, 100%, 72%, 0.4);
+}
+
+/* Scroll Animation Classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typewriter Cursor */
+.typewriter-text {
+  border-right: 2px solid var(--orange-yellow-crayola);
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--orange-yellow-crayola); }
+}
