@@ -1,0 +1,177 @@
+<!-- Projects Section -->
+<section class="projects section horizontal-scroll-enabled" id="projects">
+    <div class="container">
+        <div class="section-heading">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">All Projects</button>
+            <button class="filter-button" data-filter="mlops">MLOps</button>
+            <button class="filter-button" data-filter="ml">Machine Learning</button>
+            <button class="filter-button" data-filter="nlp">NLP / LLM</button>
+        </div>
+        <div class="scroll-arrow-container">
+            <button class="scroll-arrow prev-arrow" aria-label="Previous items">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll-arrow next-arrow" aria-label="Next items">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="horizontal-scroll-wrapper">
+            <div class="scroll-content projects-grid">
+
+                <!-- Project 1: Loan Risk Assessment Platform -->
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #0f3460, #16213e); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-shield-alt" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Loan Risk Assessment Platform</h3>
+                        <p class="project-description">Real-time, end-to-end loan risk assessment platform built with
+                            MLOps principles. Automated CI/CD with Docker and model tracking with MLflow, deployed on
+                            AWS SageMaker.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">AWS SageMaker</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SaiBhuvanesh-2002" class="project-link" target="_blank"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Healthcare Utilization & Readmission Models -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #1a1a2e, #533483); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-heartbeat" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Healthcare Utilization & Readmission Prediction</h3>
+                        <p class="project-description">Reduced hospital readmission rates by 8% through LSTM + XGBoost
+                            predictive modeling on EHR data. Engineered large-scale Snowflake ETL workflows and built
+                            Power BI executive dashboards.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Power BI</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-note"><i class="fas fa-building"></i> Developed at HCL
+                                Technologies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: House Price Prediction MLOps -->
+                <div class="project-card" data-category="mlops">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #2b2d42, #457b9d); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-home" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">End-to-End House Price Prediction</h3>
+                        <p class="project-description">Complete MLOps pipeline for housing price prediction with
+                            reproducible experiment tracking. Conducted extensive EDA and validated regression models
+                            for deployment using ZenML and MLflow.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ZenML</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SaiBhuvanesh-2002" class="project-link" target="_blank"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: PDF Q&A RAG Assistant -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #1b1b2f, #4a4e69); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-file-alt" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PDF Q&A Assistant with RAG</h3>
+                        <p class="project-description">Intelligent Q&A assistant for chatting with PDF documents using
+                            Retrieval-Augmented Generation (RAG). Implemented vector search with FAISS for efficient
+                            context retrieval from long documents.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">OpenAI API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SaiBhuvanesh-2002/Gen-AI-PDF-Q-A-Assistant-"
+                                class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Brand Exposure CV Pipeline (Sports Biz) -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #0d1b2a, #1b4332); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-eye" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Brand Detection & Sponsorship Valuation</h3>
+                        <p class="project-description">AI-powered system that detects and tracks brand logos in sports
+                            broadcasts using YOLOv11 & ByteTrack. Identifies camera angles via histogram-based scene
+                            fingerprinting and scores visibility across 9 quality dimensions to generate financial media valuations.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">YOLOv11</span>
+                            <span class="tech-tag">ByteTrack</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SaiBhuvanesh-2002/Brand-Detection-" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 6: LocalGPT -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #0a0a1a, #1a3a5c); display:flex; align-items:center; justify-content:center;">
+                        <i class="fas fa-robot" style="font-size:4rem; color:rgba(255,255,255,0.15);"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">LocalGPT — Private AI Chatbot</h3>
+                        <p class="project-description">Fully local AI chatbot with real-time token streaming, live model
+                            selector, multi-modal image Q&A, and conversation memory — powered by Ollama & Chainlit.
+                            No cloud. No API keys. 100% private.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">Chainlit</span>
+                            <span class="tech-tag">Streaming</span>
+                            <span class="tech-tag">Multi-Modal</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SaiBhuvanesh-2002" class="project-link" target="_blank"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
